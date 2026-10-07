@@ -1,0 +1,735 @@
+{
+  "metadata": {
+    "source": "IIT Bombay Academic Office",
+    "department": "ENT",
+    "year": 2026,
+    "semester": 1,
+    "course_count": 14,
+    "extracted_at": "2026-10-03T10:47:46.744Z"
+  },
+  "courses": [
+    {
+      "course_code": "ENT101",
+      "course_name": "Introduction to Innovation & Entrepreneurship",
+      "basic_info": {
+        "total_credits": 4,
+        "type": "Theory",
+        "lecture": 2,
+        "tutorial": null,
+        "practical": null,
+        "self_study": null,
+        "half_semester": false
+      },
+      "offering": {
+        "department": "ENT",
+        "year": 2026,
+        "semester": 1,
+        "course_content_category": "Interdisciplinary STEM Course.",
+        "instructors": [
+          "A - Ramesh Mangaleswaran I - Anuradha Narasimhan"
+        ],
+        "venue": "5 Fri-5B-08:00:00-09:25:00-Class Room : LH 301 Wed-5A-08:00:00-09:25:00-Class Room : LH 301",
+        "semester_type": null,
+        "slot": "200",
+        "registration_limits": [
+          1,
+          200
+        ],
+        "schedule": [
+          {
+            "day": "Fri",
+            "slot": "5B",
+            "start": "08:00:00",
+            "end": "09:25:00"
+          },
+          {
+            "day": "Wed",
+            "slot": "5A",
+            "start": "08:00:00",
+            "end": "09:25:00"
+          }
+        ]
+      },
+      "course_details": {
+        "text_reference": "Bill Aulet, Technology Entrepreneurship, 4th ed., Tata McGraw Hill, 2014.2. Byers, Dorf, and Nelson, Technology Ventures: From Ideas to Enterprise, McGraw Hill, 20103. Paul B. Paulus, Bernard A. Nijstad, The Oxford Handbook of Group Creativity and Innovation, Oxford University Press, 20194. De Bono Edward, Lateral Thinking, Penguin (UK), 1972.",
+        "description": "ENT101 Introduction to Innovation & Entrepreneurship:Expose UG students in their first year to 302221entrepreneurial thinking & mindset302222 by introducing various elements of venture creation including basic concepts in innovation and entrepreneurship. It will also help build generalist skills in UG students and aid them in becoming well-rounded individuals and preparing for careers beyond core engineering.1) Basics of Creativity, Innovation, Product Development (2) Market opportunity identification - Basics (3) Customer value proposition - Basics (4) Basics of finance and business planning (5) Marketing and Go To Market Planning",
+        "last_update": "2026-06-30 12:08:02.542274"
+      },
+      "source": {
+        "course_page": "https://asc.iitb.ac.in/academic/CourseRegistration/Common/crsedetail.jsp?ccd=ENT101&view=",
+        "running_courses_page": "https://asc.iitb.ac.in/academic/utility/RunningCourses.jsp?deptcd=ENT&year=2026&semester=1"
+      }
+    },
+    {
+      "course_code": "ENT602",
+      "course_name": "Technology Venture Creation",
+      "basic_info": {
+        "total_credits": 6,
+        "type": "Theory",
+        "lecture": 3,
+        "tutorial": null,
+        "practical": null,
+        "self_study": null,
+        "half_semester": false
+      },
+      "offering": {
+        "department": "ENT",
+        "year": 2026,
+        "semester": 1,
+        "course_content_category": "Interdisciplinary HASMED Course",
+        "instructors": [
+          "I - Ramesh Kuruva I - Sankalp Pratap"
+        ],
+        "venue": "L Mon-L1-14:00:00-16:55:00-105- Interactive Classroom",
+        "semester_type": null,
+        "slot": "10",
+        "registration_limits": [
+          2,
+          56,
+          3,
+          10
+        ],
+        "schedule": [
+          {
+            "day": "Mon",
+            "slot": "L1",
+            "start": "14:00:00",
+            "end": "16:55:00"
+          }
+        ]
+      },
+      "course_details": {
+        "text_reference": "Texts / References (The total number to be restricted to 6 302226 8. Web references may be given, if really required. Complete details of Texts/References should be provided. Book: Authors (Initials & Last name), Title, Edition (Optional), Publisher, Year. Journal Articles: Authors (Initials & Last name), Title, Journal name, Volume, Page nos., Year. Web References: Authors/Organization, Title, Year (if available), URL.)Startup Owner302222s Manual: The Step-by-Step Guide to Building a Great Company, Steve Blank and Bob Dorf, K&S Ranch Publishing, 2. Technology Ventures: From Idea to Enterprise, Richard C. Dorf and Thomas H. Byres, McGraw-Hill India 2013. Additional ReadingThe Art of the Start 2.0 by Guy Kawasaki, Portfolio/Penguin 2.Technology Strategy for Manager and Entrepreneurs by Scott Shane, Pearson, 2011.",
+        "description": "ENT602 Technology Venture Creation: The purpose of this capstone course is to enable students to work on product development and startupbusiness plan of technology led entrepreneurial opportunities. Students are expected to participate in multiple do-it-yourself sessions to build product prototype. The course will help students develop a startup business plan around a technology led idea by learning opportunity assessment, product development, go-to-market strategy and team building. It will help students get hands-on experience on the process of product development and start-up formation. Students are expected to develop the leadership skills required to begin their entrepreneurial journey. \" (1)Purpose, Leadership & Team Building (2) Customer Discovery (3) Product Design, POC & Prototyping (4) Business Modelling (5) Startup Finance, Unit Economics (6) Product Development, Testing & Validation (7) Intellectual Property (8) Sales & Marketing (9) Startup Incorporation & Planning for success \"",
+        "last_update": "2024-01-01 11:34:00.180018"
+      },
+      "source": {
+        "course_page": "https://asc.iitb.ac.in/academic/CourseRegistration/Common/crsedetail.jsp?ccd=ENT602&view=",
+        "running_courses_page": "https://asc.iitb.ac.in/academic/utility/RunningCourses.jsp?deptcd=ENT&year=2026&semester=1"
+      }
+    },
+    {
+      "course_code": "ENT606",
+      "course_name": "Developing a Proof of Concept- Basic",
+      "basic_info": {
+        "total_credits": 6,
+        "type": "Lab",
+        "lecture": null,
+        "tutorial": null,
+        "practical": 6,
+        "self_study": null,
+        "half_semester": false
+      },
+      "offering": {
+        "department": "ENT",
+        "year": 2026,
+        "semester": 1,
+        "course_content_category": "Interdisciplinary HASMED Course",
+        "instructors": [
+          "C - Sankalp Pratap I - Vishal Gupta"
+        ],
+        "venue": "L Tue-L2-14:00:00-16:55:00-105- Interactive Classroom",
+        "semester_type": null,
+        "slot": "20",
+        "registration_limits": [
+          4,
+          42,
+          5,
+          20
+        ],
+        "schedule": [
+          {
+            "day": "Tue",
+            "slot": "L2",
+            "start": "14:00:00",
+            "end": "16:55:00"
+          }
+        ]
+      },
+      "course_details": {
+        "text_reference": "Cool Tools: A Catalog of Possibilities, Kevin Kelly, Cool Tools Lab, 2013",
+        "description": "ENT 606 Developing a Proof of Concept (Basic) is a foundational lab course for aspiring entrepreneurs - it is a project-based course and involves workshops in the lab where students gain hands-on experience in fundamental skills required for product development. The expected output is a product designed after learning from the workshops, and having undergone concept and product development for your start-up ideas. Both the concept and the product will be considered and evaluated for the course grade. Learning Objectives : (1) Hands-on approach to model building (2) Prototype-Design Approaches (3) Creation of working prototype (4) Testing of prototype",
+        "last_update": "2023-07-06 12:42:59.094758"
+      },
+      "source": {
+        "course_page": "https://asc.iitb.ac.in/academic/CourseRegistration/Common/crsedetail.jsp?ccd=ENT606&view=",
+        "running_courses_page": "https://asc.iitb.ac.in/academic/utility/RunningCourses.jsp?deptcd=ENT&year=2026&semester=1"
+      }
+    },
+    {
+      "course_code": "ENT609",
+      "course_name": "Marketing & Finance for Entrepreneurs",
+      "basic_info": {
+        "total_credits": 6,
+        "type": "Theory",
+        "lecture": 3,
+        "tutorial": null,
+        "practical": null,
+        "self_study": null,
+        "half_semester": false
+      },
+      "offering": {
+        "department": "ENT",
+        "year": 2026,
+        "semester": 1,
+        "course_content_category": "Interdisciplinary HASMED Course",
+        "instructors": [
+          "I - Devdip Purkayastha I - Umakant Jayaram"
+        ],
+        "venue": "12 Mon-12A-17:05:00-18:00:00-310- Interactive Classroom Thu-12C-17:05:00-18:00:00-310- Interactive Classroom Tue-12B-17:05:00-18:00:00-310- Interactive Classroom",
+        "semester_type": null,
+        "slot": "15",
+        "registration_limits": [
+          6,
+          39,
+          7,
+          15
+        ],
+        "schedule": [
+          {
+            "day": "Mon",
+            "slot": "12A",
+            "start": "17:05:00",
+            "end": "18:00:00"
+          },
+          {
+            "day": "Thu",
+            "slot": "12C",
+            "start": "17:05:00",
+            "end": "18:00:00"
+          },
+          {
+            "day": "Tue",
+            "slot": "12B",
+            "start": "17:05:00",
+            "end": "18:00:00"
+          }
+        ]
+      },
+      "course_details": {
+        "text_reference": "Lean Startup`, Eric Ries, `Principles of Marketing`, Philip Kotler & others, Financial & Managerial Accounting, Paul Kimmel & others, `The Art of Startup Fund Raising` Alejandro Cremades. Course pre-reading, videos and assignments will be provided",
+        "description": "The ENT609 course is designed for aspiring Technology Entrepreneurs who are keen to convert their ideas & innovations into successful, sustainable and profitable startups. The curriculum provides a structured & holistics overview of various Customer Engagement, Marketing & Finance skills that are required for the Entrepreneurial Journey from `Idea-to-IPO`. Students will be required to work in teams on real-world customer & market discovery, customer value proposition & solution design, go-to-market plans, financial plans & investor pitch. Teams will be required to develop and present detailed startup business plans and investor pitch decks.(1) Understanding why Startups Succeed or Fail (b) Self Discovery & Entrepreneurial Readiness Assessment (3) Startup Team Formation (4) Customer Problem Identification & Market Assessment (5)Customer Value Proposition & Solution Design (6) Customer Pricing (7)Branding & Advertisement (8)Supply Chain & Sales Channels (9) Customer Service & Advocacy (10) Sales Team and Tools (11) Accounting Concepts & Definition (12) Basics of Finance (13) Startup Financing (14) Startup Company Structure (15) Environment, Sustainability & Corporate Governance (ESG) (16) Investor Pitching",
+        "last_update": "2022-12-27 12:44:32.66993"
+      },
+      "source": {
+        "course_page": "https://asc.iitb.ac.in/academic/CourseRegistration/Common/crsedetail.jsp?ccd=ENT609&view=",
+        "running_courses_page": "https://asc.iitb.ac.in/academic/utility/RunningCourses.jsp?deptcd=ENT&year=2026&semester=1"
+      }
+    },
+    {
+      "course_code": "ENT612",
+      "course_name": "Field Immersion for Researchers and Entrepreneurs",
+      "basic_info": {
+        "total_credits": 6,
+        "type": "Lab",
+        "lecture": 1,
+        "tutorial": 1,
+        "practical": 2,
+        "self_study": null,
+        "half_semester": false
+      },
+      "offering": {
+        "department": "ENT",
+        "year": 2026,
+        "semester": 1,
+        "course_content_category": "Interdisciplinary HASMED Course",
+        "instructors": [
+          "I - Sankalp Pratap"
+        ],
+        "venue": "X Wed-X1-14:00:00-14:55:00-105- Interactive Classroom Wed-X2-15:00:00-15:55:00-105- Interactive Classroom Wed-X3-16:00:00-16:55:00-105- Interactive Classroom",
+        "semester_type": null,
+        "slot": "10",
+        "registration_limits": [
+          8,
+          53,
+          9,
+          10
+        ],
+        "schedule": [
+          {
+            "day": "Wed",
+            "slot": "X1",
+            "start": "14:00:00",
+            "end": "14:55:00"
+          },
+          {
+            "day": "Wed",
+            "slot": "X2",
+            "start": "15:00:00",
+            "end": "15:55:00"
+          },
+          {
+            "day": "Wed",
+            "slot": "X3",
+            "start": "16:00:00",
+            "end": "16:55:00"
+          }
+        ]
+      },
+      "course_details": {
+        "text_reference": "1. C. Geertz, The interpretation of cultures, Basic Books, 1973 2. Denzin & Lincoln (eds), Observation in a Surveilled World, Sage Handbook of Qualitative Research, Sage, 2018. 3. M.C.Beaudry,302240The written and the wrought: complementary sources in Historical Anthropology, Kroeber Anthropological Society1995 4. S. Venkatesh, Gang leader for a day. A Rouge Sociologist Crosses the Line, Allen Lane , 2008302240Journal Articles 1. S.McDonald, Studying actions in context: a qualitative shadowing method for organizational research.302240Qualitative research,3022405(4), 455-473,2005. 2. M. Smets, G. Burke, P. Jarzabkowski & P. Spee, Charting new territory for organizational ethnography: Insights from a team-based video ethnography, Journal of Organizational Ethnography, 3(1),10-26, 2014 3. 3. S.Kouam303251, & F. Liu, Capturing emotions in qualitative strategic organization research.302240Strategic Organization,30224019(1), 97-112, 20214. M. Birks, Y. Chapman & K. Francis, Memoing in qualitative research: Probing data and processes.302240Journal of research in nursing,30224013(1), 68-75, 2008",
+        "description": "\"The field of Entrepreneurship is increasingly important for India as evidenced by policy push for universities as also other sections of the society through the Startup India initiative. Popular research has identified that among various reasons for failure of new ventures, incorrect identification of customer need and problem statement is by far the most prevalent. This course will aid aspiring entrepreneurs (typically B Tech / MTech /PhD students) in deep understanding of customer needs and pain points thus eliminating the waste that occurs. For doctoral students, ethnographic enquiry is a well established methodology for theory building endeavours. With the field of entrepreneurship veering towards 302221entrepreneurship as practice302222 , a sociological approach to understanding this domain, field immersion techniques become crucial from academic research perspective. This methodology which forms the bedrock of theory building is particularly important at the time that India specific theories in the field of entrepreneurship are being sought to better promote new ventures in the economy.\"\"1) Ethnography as a methodology for Innovation & entrepreneurship practice and research2) Gaining access to the field and ethics of ethnographic inquiry3) Participant and Non participant observations4) Forms of data - Visual data, historical data, videos and articles5) Data Collection - conducting Ethnographic interviews, shadowing the protagonists, artefacts6) Data Storage and organization7) Field notes and thick description8) Open and Axial Coding\"",
+        "last_update": "2024-12-02 09:57:51.203704"
+      },
+      "source": {
+        "course_page": "https://asc.iitb.ac.in/academic/CourseRegistration/Common/crsedetail.jsp?ccd=ENT612&view=",
+        "running_courses_page": "https://asc.iitb.ac.in/academic/utility/RunningCourses.jsp?deptcd=ENT&year=2026&semester=1"
+      }
+    },
+    {
+      "course_code": "ENT615",
+      "course_name": "Strategy and Leadership for Entrepreneurs",
+      "basic_info": {
+        "total_credits": 3,
+        "type": "Theory",
+        "lecture": 3,
+        "tutorial": null,
+        "practical": null,
+        "self_study": null,
+        "half_semester": true
+      },
+      "offering": {
+        "department": "ENT",
+        "year": 2026,
+        "semester": 1,
+        "course_content_category": "Interdisciplinary HASMED Course",
+        "instructors": [
+          "I - Anuradha Narasimhan I - Rajesh Gopinathan I - Ramesh Mangaleswaran"
+        ],
+        "venue": "X Wed-X1-14:00:00-14:55:00-206- Interactive Classroom Wed-X2-15:00:00-15:55:00-206- Interactive Classroom Wed-X3-16:00:00-16:55:00-206- Interactive Classroom",
+        "semester_type": null,
+        "slot": "10",
+        "registration_limits": [
+          10,
+          69,
+          11
+        ],
+        "schedule": [
+          {
+            "day": "Wed",
+            "slot": "X1",
+            "start": "14:00:00",
+            "end": "14:55:00"
+          },
+          {
+            "day": "Wed",
+            "slot": "X2",
+            "start": "15:00:00",
+            "end": "15:55:00"
+          },
+          {
+            "day": "Wed",
+            "slot": "X3",
+            "start": "16:00:00",
+            "end": "16:55:00"
+          }
+        ]
+      },
+      "course_details": {
+        "text_reference": "1) Competitive strategy: techniques for analyzing industries and competitors, By: Porter, Michael E, Publication details: ; New York : Free Press, 1980 ; 1980 2) Innovator`s Dilemma: when new technologies cause great firms to fail, By: Christensen, Clayton M, publication details: Harvard Business Review Press 2017 3) A Behavioral Theory of the Firm Book by James G. March and Richard Cyert, Originally published: 1963, Authors: Richard Cyert, James G. MarchISBN: 0-631-17451-6 4) Technology Entrepreneurship, Bill Aulet book 5) Good to Great: Why Some Companies Make the Leap... and Others Don`t is a management book by Jim C. Collins, Author: James C. CollinsDewey Decimal: 658 21Case Readings & Articles (will be provided by faculty)",
+        "description": "Modules : Basics of Strategic Thinking - Why bother about strategy. - Definition and components of strategy - Strategic thinking vs. operational thinking Choosing where to play - Why are you starting this business? What is your market insight? -What is your advantage (first mover, access to scarce talent, IP, brand, ecosystem leverage) - Framework for choices involved in where to play. Establishing your Right to Win / Positioning and Differentiation - Why should the customer choose you - Creating a unique value proposition - Why are you better than the competition from a customer�s perspective - Why are you better than the competition from an investor�s perspective Operating Strategies -- Capabilities & Systems Financial Model - Growth, Profitability, and Cash / Assessing business viability and attractiveness - Creating value : what comprises true unit economics, how can scalability be achieved with robust economics, (is there a) distinction between valuation and value; how to assess impact from multiple stakeholder lenses, trade-offs if any - Network Effect � Speed to Scale as a strategic lever - Operating Leverage: Unit economics Vs Investment - Sustainable Growth � Managing Cash and RoE - Risk vs Return � Founder Vs VC/PE risk appetite Leadership - Qualities of an entrepreneur: risk taker, about Co-founders, team builder, external networker, personal resilience - Traits of effective leaders - Leadership Styles and Theories - Recruiting and keeping high performers - Conflict resolution - Managing in uncertainty / Conviction, Agility, and Resilience - Planning for uncertainty: types of uncertainty and responses to them - Monitoring and adjusting strategy -- When and how to hold the line, pivot, adapt",
+        "last_update": "2024-06-20 10:18:42.996525"
+      },
+      "source": {
+        "course_page": "https://asc.iitb.ac.in/academic/CourseRegistration/Common/crsedetail.jsp?ccd=ENT615&view=",
+        "running_courses_page": "https://asc.iitb.ac.in/academic/utility/RunningCourses.jsp?deptcd=ENT&year=2026&semester=1"
+      }
+    },
+    {
+      "course_code": "ENT617",
+      "course_name": "Tech-Opportunities Identification",
+      "basic_info": {
+        "total_credits": 3,
+        "type": "Theory",
+        "lecture": 3,
+        "tutorial": null,
+        "practical": null,
+        "self_study": null,
+        "half_semester": true
+      },
+      "offering": {
+        "department": "ENT",
+        "year": 2026,
+        "semester": 1,
+        "course_content_category": "Interdisciplinary HASMED Course",
+        "instructors": [
+          "C - Anuradha Narasimhan I - Rajkumar R. Hirwani"
+        ],
+        "venue": "L Thu-L3-14:00:00-16:55:00-105- Interactive Classroom",
+        "semester_type": null,
+        "slot": "20",
+        "registration_limits": [
+          12,
+          52,
+          13,
+          20
+        ],
+        "schedule": [
+          {
+            "day": "Thu",
+            "slot": "L3",
+            "start": "14:00:00",
+            "end": "16:55:00"
+          }
+        ]
+      },
+      "course_details": {
+        "text_reference": "1. Entrepreneurship Successfully launching new Ventures, Bruce R. Barringer and R. Duane, 5th Edition, 2016, Pearson 2. Finding Fertile Ground, Scott A. Share, Pearson, 1st Ed.,2005, Pearson 3. Models of Opportunity, Gerard George and Adam E. Bock Cambridge University Press, 1st Ed., 4. The Little Black Book of Innovation, Scott D. Anthony, Harvard Business Review Press, 1st Ed. 5. Startup Owner302222s Manual: The Step-by-Step Guide to Building a Great Company, Steve Blank and Bob Dorf, K&S Ranch Publishing,In addition, relevant reading material and case studies will be shared,",
+        "description": "Recognizing Entrepreneurial Opportunities and Generating Ideas Types of Change (Technology, social and demographic factors, Economy and Industry factors) Transforming science into Business Technology, Industry and Competitor Analysis Feasibility Analysis Developing an Effective Business Model",
+        "last_update": "2024-07-02 15:41:00.221449"
+      },
+      "source": {
+        "course_page": "https://asc.iitb.ac.in/academic/CourseRegistration/Common/crsedetail.jsp?ccd=ENT617&view=",
+        "running_courses_page": "https://asc.iitb.ac.in/academic/utility/RunningCourses.jsp?deptcd=ENT&year=2026&semester=1"
+      }
+    },
+    {
+      "course_code": "ENT620",
+      "course_name": "AI for Business and Entrepreneurs",
+      "basic_info": {
+        "total_credits": 3,
+        "type": "Theory",
+        "lecture": 3,
+        "tutorial": null,
+        "practical": null,
+        "self_study": null,
+        "half_semester": true
+      },
+      "offering": {
+        "department": "ENT",
+        "year": 2026,
+        "semester": 1,
+        "course_content_category": "Interdisciplinary HASMED Course",
+        "instructors": [
+          "I - Lina Sonne Vyas"
+        ],
+        "venue": "7 Fri-7B-11:05:00-12:30:00-105- Interactive Classroom Wed-7A-11:05:00-12:30:00-105- Interactive Classroom",
+        "semester_type": null,
+        "slot": "15",
+        "registration_limits": [
+          14,
+          45,
+          15
+        ],
+        "schedule": [
+          {
+            "day": "Fri",
+            "slot": "7B",
+            "start": "11:05:00",
+            "end": "12:30:00"
+          },
+          {
+            "day": "Wed",
+            "slot": "7A",
+            "start": "11:05:00",
+            "end": "12:30:00"
+          }
+        ]
+      },
+      "course_details": {
+        "text_reference": "302225 Amaral, A. & Pe303247as, P. (2021). SMEs and Industry 4.0: Two case studies of digitalization for a smoother integration. Computers in Industry, Volume 125, 103333, ISSN 0166-3615, https://doi.org/10.1016/j.compind.2020.103333. 302225 Govindarajan, V. & Venkatraman (2024). Fusion Strategy: How Real-Time Data and AI Will Power the Industrial Future. Boston: Harvard Business Review Press 302225 Iansiti, M., and Karim R. L. (2020). Competing in the Age of AI: Strategy and Leadership When Algorithms and Networks Run the World. Boston: Harvard Business Review Press. 302225 Jain, A. (2023). POWERHOUSE: Proven AI Playbook to 10x Your Business and Leadership Impact: 10 Plug-and-Play Artificial Intelligence Driven Business Ideas and Strategies for Aspiring Entrepreneurs and Leaders. Clever Fox Publishing 302225 Polisetty, A., Chakraborty, D., G, S., Kar, A. K., & Pahari, S. (2023). What Determines AI Adoption in Companies? Mixed-Method Evidence. Journal of Computer Information Systems, 64(3), 370302226387. https://doi.org/10.1080/08874417.2023.2219668",
+        "description": "This course offers an introduction to the 1) impact of AI on startups and businesses, and 2) the emergence of new AI startups. Students will learn how AI is useful for businesses, and analyse the kind of functions and areas where AI may be applied. Students will learn how AI driven data feed into decision-making and more efficient processes. The course will also discuss how to think about the impact of AI implementation, and what leadership means in a rapidly changing AI-driven scenario. Students will learn about the pitfalls of AI including working with low-quality data, and ethical implications of Gen AI. In this course we will cover the following aspects: 1. Introduction to Gen AI and the AI landscape and why it is important for businesses to look at and understand AI. 2. Examples and use cases of how AI is applied in different business functions and sectors. How AI tools can be used in common business domains, functions and processes, how AI-driven data feeds into decision-making. We look at AI implementation examples in different business functions. 3. New business opportunities emerging out of AI and emerging AI first business. 4. Impact of AI on industries and sectors 5. Responsible AI: Ethics, Bias, Regulation 6. Role of leadership and change management: how to lead and manage AI-driven change.",
+        "last_update": "2024-11-12 09:33:55.284893"
+      },
+      "source": {
+        "course_page": "https://asc.iitb.ac.in/academic/CourseRegistration/Common/crsedetail.jsp?ccd=ENT620&view=",
+        "running_courses_page": "https://asc.iitb.ac.in/academic/utility/RunningCourses.jsp?deptcd=ENT&year=2026&semester=1"
+      }
+    },
+    {
+      "course_code": "ENT623",
+      "course_name": "Fintech Entrepreneurship",
+      "basic_info": {
+        "total_credits": 3,
+        "type": "Theory",
+        "lecture": 3,
+        "tutorial": null,
+        "practical": null,
+        "self_study": null,
+        "half_semester": true
+      },
+      "offering": {
+        "department": "ENT",
+        "year": 2026,
+        "semester": 1,
+        "course_content_category": "Interdisciplinary HASMED Course",
+        "instructors": [
+          "I - Ramesh Kuruva"
+        ],
+        "venue": "11 Fri-11B-15:30:00-16:55:00-105- Interactive Classroom Tue-11A-15:30:00-16:55:00-105- Interactive Classroom",
+        "semester_type": null,
+        "slot": "10",
+        "registration_limits": [
+          16,
+          21,
+          17,
+          10
+        ],
+        "schedule": [
+          {
+            "day": "Fri",
+            "slot": "11B",
+            "start": "15:30:00",
+            "end": "16:55:00"
+          },
+          {
+            "day": "Tue",
+            "slot": "11A",
+            "start": "15:30:00",
+            "end": "16:55:00"
+          }
+        ]
+      },
+      "course_details": {
+        "text_reference": "1. Christensen, Clayton M., Raynor, Michael E. and McDonald, Rory. (2). What is Disruptive Innovation? Harvard Business Review.2. Fintech: Ecosystem, Business Models, Investment Decisions, and Challenges 302226 HBS, 2018.3. Satoshi Nakamoto. (2008). Bitcoin: A Peer-to-Peer Electronic Cash System.4. Paytm: Building a Payments Network 302226 HBS, 20175. How Artificial Intelligence Is Disrupting Finance 302226 Toptal6. Lufax: Fintech and the Transformation of Wealth Management in China 302226 HBS, 2018",
+        "description": "FinTech is transforming how we access, use, and think about financial services. From digital payments and lending platforms to AI-driven investment tools and blockchain innovations, technology is creating new possibilities for disruption across the financial sector.This course offers a practical and accessible introduction to the world of FinTech, ideal for aspiring entrepreneurs, professionals, and curious learners alike. Through conceptual frameworks, real-world use cases, and case studies, participants will explore how FinTech is reshaping banking, lending, and financial services, and understand its broader impact at both business and national levels.The Desai Sethi School of Entrepreneurship (DSSE) is the ideal home for such a course. With its focus on innovation, disruption, and venture creation, DSSE empowers students to not just understand FinTech but to build within it.Located in Mumbai, the financial capital of India, IIT Bombay offers students direct exposure to leading banks, startups, investors, and policymakers. This proximity, combined with the entrepreneurial environment at DSSE, gives students a unique opportunity to launch impactful FinTech ventures and shape the future of financial services from one of the most dynamic ecosystems in the country.Introduction to FinTech1 Understand what FinTech is and why it matters2 Explore the history and evolution of financial technologies3 Get a broad overview of the FinTech ecosystemCore Concepts Behind FinTech4 Learn how finance, technology, and economics come together5 Understand major categories and types of FinTech solutions Key Trends in FinTech1 Digital payments and banking innovation2 Crowdfunding, lending platforms, and alternative finance3 Neo-banking, investment tech, and financial disruptionRegulations and Stakeholders1 Role of central banks and regulators2 Insights from investors and industry expertsApplications and Impact1 Real-world use cases in banking and financial services2 Case studies on FinTech302222s impact at business and national levels3 Explore how FinTech is reshaping financial inclusion and efficiencyEntrepreneurship Opportunities in Fintech Sector",
+        "last_update": "2025-07-08 17:07:12.725913"
+      },
+      "source": {
+        "course_page": "https://asc.iitb.ac.in/academic/CourseRegistration/Common/crsedetail.jsp?ccd=ENT623&view=",
+        "running_courses_page": "https://asc.iitb.ac.in/academic/utility/RunningCourses.jsp?deptcd=ENT&year=2026&semester=1"
+      }
+    },
+    {
+      "course_code": "ENT625",
+      "course_name": "Branding & Digital Marketing for Entrepreneurs",
+      "basic_info": {
+        "total_credits": 3,
+        "type": "Theory",
+        "lecture": 3,
+        "tutorial": null,
+        "practical": null,
+        "self_study": null,
+        "half_semester": false
+      },
+      "offering": {
+        "department": "ENT",
+        "year": 2026,
+        "semester": 1,
+        "course_content_category": "Interdisciplinary HASMED Course",
+        "instructors": [
+          "I - Anuradha Narasimhan"
+        ],
+        "venue": "11 Fri-11B-15:30:00-16:55:00-Class Room : LC 001 Tue-11A-15:30:00-16:55:00-Class Room : LC 001",
+        "semester_type": null,
+        "slot": "20",
+        "registration_limits": [
+          18,
+          90,
+          19,
+          20
+        ],
+        "schedule": [
+          {
+            "day": "Fri",
+            "slot": "11B",
+            "start": "15:30:00",
+            "end": "16:55:00"
+          },
+          {
+            "day": "Tue",
+            "slot": "11A",
+            "start": "15:30:00",
+            "end": "16:55:00"
+          }
+        ]
+      },
+      "course_details": {
+        "text_reference": "1 The Lean Startup: How Today`s Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses302227 by Eric Ries2 Purple Cow: Transform Your Business by Being Remarkable302227 by Seth Godin3 Marketing Management302227 by Philip Kotler 4 Digital Marketing Strategy: An Integrated Approach to Online Marketing302227 by Simon Kingsnorth5 Digital Marketing For Dummies302227 by Ryan Deiss and Russ Henneberry(Part of the For Dummies series, this book provides a comprehensive overview of digital marketing strategies and tools.)6 Performance Marketing resources from Google & Facebook",
+        "description": "The objective of the course is detailed below. 1 Introduce entrepreneurs to role of Branding and Marketing in building startups 2 Enable entrepreneurs to understand the role of Vision and Purpose in Branding. 3 Equip entrepreneurs with an understanding of digital marketing strategies and tools.​ 4 Enable participants to develop and execute effective digital marketing plans tailored for startups and entrepreneurial ventures.​ The course will include the following modules: 1 Week 1: Role of Branding & Marketing in building startups + Business Models 2 Week 2: Understanding the Customer Sets � Investor, Customer, 3 Prospective Employee + CVP 4 Week 3: Vision, Purpose and Branding / Brand building models 5 Week 4: Basics of Digital Marketing / Digital Consumer Journey 6 Week 5: Messaging and Content Strategy 7 Week 6: B2B Marketing (GTM and Content driven) 8 Week 6: B2C Marketing Channels (Display, Search, Social Media, Email, Influencer & Affiliate Marketing) 9 Week 7: Analytics and Measuring Effectiveness",
+        "last_update": "2025-05-16 10:54:43.462409"
+      },
+      "source": {
+        "course_page": "https://asc.iitb.ac.in/academic/CourseRegistration/Common/crsedetail.jsp?ccd=ENT625&view=",
+        "running_courses_page": "https://asc.iitb.ac.in/academic/utility/RunningCourses.jsp?deptcd=ENT&year=2026&semester=1"
+      }
+    },
+    {
+      "course_code": "ENT701",
+      "course_name": "Core Topics in Innovation and Entrepreneurship",
+      "basic_info": {
+        "total_credits": 6,
+        "type": "Theory",
+        "lecture": 3,
+        "tutorial": null,
+        "practical": null,
+        "self_study": null,
+        "half_semester": false
+      },
+      "offering": {
+        "department": "ENT",
+        "year": 2026,
+        "semester": 1,
+        "course_content_category": "Interdisciplinary HASMED Course",
+        "instructors": [
+          "I - Lina Sonne Vyas I - Ramesh Kuruva I - Sankalp Pratap"
+        ],
+        "venue": "L Wed-L5-09:30:00-12:30:00-206- Interactive Classroom",
+        "semester_type": null,
+        "slot": "25",
+        "registration_limits": [
+          20,
+          25
+        ],
+        "schedule": [
+          {
+            "day": "Wed",
+            "slot": "L5",
+            "start": "09:30:00",
+            "end": "12:30:00"
+          }
+        ]
+      },
+      "course_details": {
+        "text_reference": "Books:1. D.B. Audretsch, O. Falck, & S. Heblich, S. (Eds.), Handbook of research on innovation and entrepreneurship. Edward Elgar Publishing, 2011 2. H. Neergaard & J.P. Ulh303270i (Eds.), Handbook of qualitative research methods in entrepreneurship. Edward Elgar Publishing, 2007 3. C. Christensen, T. Hall, K.Dillon & D.S.Duncan, Competing against luck.302240The story of innovation and customer choice. First edition. New York, NY: Harper Collins Publishers, 2016 Journal Articles: 1. J. West, & M. Bogers, Leveraging external sources of innovation: A review of research on open innovation. Journal of product innovation management, 31(4), 814-831, 2014. 2. M. Dziallas & K. Blind, Innovation indicators throughout the innovation process: An extensive literature analysis. Technovation, 80, 3-29, 2019 3. S. Shane & S. Venkataraman, The promise of entrepreneurship as a field of research. Academy of Management Review, 25: 217-226, 2000. 4. G. Fisher, Effectuation, causation, and bricolage: A behavioral comparison of emerging theories in entrepreneurship research. Entrepreneurship theory and practice, 36(5), 1019-1051, 2 5. Burgelman, R.A, A process model of internal corporate venturing in diversified major firm. Administrative Science Quarterly, 28: 223-244, 1983.",
+        "description": "Technology and Innovation Management:: 1. Innovation Processes : Indicators, role of digital tools, emotions 2. Firm Boundaries and Technological Innovation: Organizational structure and innovation, open innovation, collaboration networks 3. Frontiers in Innovation Research: Platforms, disruptive innovation, idea screening, innovation adoption, artificial intelligence. 4. Entrepreneurship- Landscaping the field: What is entrepreneurship? Who is (not) an entrepreneur? What is the role of the entrepreneur? What questions define the field? 5. Sources of Entrepreneurship: Creation / discovery of opportunities 6. Entrepreneurial Resources: key resources for entrepreneurs, and how entrepreneurs acquire / build them 7. Corporate Entrepreneurship: Process models, issues of legitimacy and identity 8. Entrepreneurial Support Organizations: Incubators, accelerators, science parks, maker spaces, co-working spaces) 9. Venture Financing: How are entrepreneurial ventures financed, monitored and governed? 10. Business Models: Importance, design and pivots 11. Institutional Context of Entrepreneurship: How do markets and fields get created? How does entrepreneurship unfold in emerging contexts? 12. Entrepreneurial Ecosystems: Distinct features, metrics and associated labour",
+        "last_update": "2024-02-27 12:58:39.479344"
+      },
+      "source": {
+        "course_page": "https://asc.iitb.ac.in/academic/CourseRegistration/Common/crsedetail.jsp?ccd=ENT701&view=",
+        "running_courses_page": "https://asc.iitb.ac.in/academic/utility/RunningCourses.jsp?deptcd=ENT&year=2026&semester=1"
+      }
+    },
+    {
+      "course_code": "ENT702",
+      "course_name": "Advanced Research Methodology for Entrepreneurship",
+      "basic_info": {
+        "total_credits": 6,
+        "type": "Lab",
+        "lecture": 1,
+        "tutorial": 1,
+        "practical": 2,
+        "self_study": null,
+        "half_semester": false
+      },
+      "offering": {
+        "department": "ENT",
+        "year": 2026,
+        "semester": 1,
+        "course_content_category": "Interdisciplinary HASMED Course",
+        "instructors": [
+          "I - Ramesh Kuruva I - Trupti Mishra"
+        ],
+        "venue": "12 Mon-12A-17:05:00-18:00:00-206- Interactive Classroom Thu-12C-17:05:00-18:00:00-206- Interactive Classroom Tue-12B-17:05:00-18:00:00-206- Interactive Classroom",
+        "semester_type": null,
+        "slot": "25",
+        "registration_limits": [
+          21,
+          25
+        ],
+        "schedule": [
+          {
+            "day": "Mon",
+            "slot": "12A",
+            "start": "17:05:00",
+            "end": "18:00:00"
+          },
+          {
+            "day": "Thu",
+            "slot": "12C",
+            "start": "17:05:00",
+            "end": "18:00:00"
+          },
+          {
+            "day": "Tue",
+            "slot": "12B",
+            "start": "17:05:00",
+            "end": "18:00:00"
+          }
+        ]
+      },
+      "course_details": {
+        "text_reference": "1. Wooldridge, \"Introductory Econometrics: A Modern Approach\" 2. Dimitrios Asteriou, \"Applied Econometrics\" 3. Gujarati, Damodar N. Basic Econometrics 4. JD Angrist, Mostly Harmless Econometrics: An Empiricistis Companion 5. Nick Lee, Ian Lings, \"Doing Business Research: A Guide to Theory and Practice\"",
+        "description": "Module 1: Statistical Foundations * Probability theory and distributions * Descriptive statistics and visualization * Hypothesis testing and inference * Introduction to regression analysis Module 2: Core Econometric Methods **Regression diagnostics and model specification * Limited dependent variables (logit, probit, count models) * Panel data methods * Introduction to causal inference ** Module 3: Advanced Causal Methods * Difference-in-differences * Propensity score matching * Time series fundamentals ** Module 4: Research Design & Applications * Experimental design in entrepreneurship * Survey design and measurement * Mixed methods integration Each week includes lectures on theory and Stata labs for hands-on practice with entrepreneurship applications.",
+        "last_update": "2025-12-16 16:32:21.95031"
+      },
+      "source": {
+        "course_page": "https://asc.iitb.ac.in/academic/CourseRegistration/Common/crsedetail.jsp?ccd=ENT702&view=",
+        "running_courses_page": "https://asc.iitb.ac.in/academic/utility/RunningCourses.jsp?deptcd=ENT&year=2026&semester=1"
+      }
+    },
+    {
+      "course_code": "ENT899",
+      "course_name": "Communication Skills",
+      "basic_info": {
+        "total_credits": 4,
+        "type": "Non-credit",
+        "lecture": null,
+        "tutorial": null,
+        "practical": null,
+        "self_study": null,
+        "half_semester": false
+      },
+      "offering": {
+        "department": "ENT",
+        "year": 2026,
+        "semester": 1,
+        "course_content_category": "Interdisciplinary HASMED Course",
+        "instructors": [
+          "I - Lina Sonne Vyas"
+        ],
+        "venue": "L Thu-L3-14:00:00-16:55:00-206- Interactive Classroom",
+        "semester_type": null,
+        "slot": "10",
+        "registration_limits": [
+          22,
+          10
+        ],
+        "schedule": [
+          {
+            "day": "Thu",
+            "slot": "L3",
+            "start": "14:00:00",
+            "end": "16:55:00"
+          }
+        ]
+      },
+      "course_details": {
+        "text_reference": "X",
+        "description": "X",
+        "last_update": "2024-07-11 12:03:50.228198"
+      },
+      "source": {
+        "course_page": "https://asc.iitb.ac.in/academic/CourseRegistration/Common/crsedetail.jsp?ccd=ENT899&view=",
+        "running_courses_page": "https://asc.iitb.ac.in/academic/utility/RunningCourses.jsp?deptcd=ENT&year=2026&semester=1"
+      }
+    },
+    {
+      "course_code": "ENTS01",
+      "course_name": "Seminar",
+      "basic_info": {
+        "total_credits": 4,
+        "type": "Seminar",
+        "lecture": null,
+        "tutorial": null,
+        "practical": 4,
+        "self_study": null,
+        "half_semester": false
+      },
+      "offering": {
+        "department": "ENT",
+        "year": 2026,
+        "semester": 1,
+        "course_content_category": "Advanced Course.",
+        "instructors": [],
+        "venue": null,
+        "semester_type": "FullSemester",
+        "slot": "300",
+        "registration_limits": [
+          23,
+          300
+        ],
+        "schedule": []
+      },
+      "course_details": {
+        "text_reference": null,
+        "description": "Ph.D. Seminar",
+        "last_update": "2024-07-11 12:58:32.401656"
+      },
+      "source": {
+        "course_page": "https://asc.iitb.ac.in/academic/CourseRegistration/Common/crsedetail.jsp?ccd=ENTS01&view=",
+        "running_courses_page": "https://asc.iitb.ac.in/academic/utility/RunningCourses.jsp?deptcd=ENT&year=2026&semester=1"
+      }
+    }
+  ]
+}
