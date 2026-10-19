@@ -4,11 +4,11 @@ from src.chatbot import get_response
 
 
 st.set_page_config(
-    page_title="IITB Department Assistant",
+    page_title="DSSE Assistant",
     page_icon="🎓"
 )
 
-st.title("IITB Department Assistant")
+st.title("DSSE Assistant")
 st.write("Ask questions about courses, the department, administration, and related topics.")
 
 if "messages" not in st.session_state:
