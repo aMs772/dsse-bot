@@ -8,6 +8,7 @@ from langchain_text_splitters import (
 
 from .config import DOCUMENTS_DIR
 
+from langchain_core.documents import Document
 
 def load_documents():
     documents = []
@@ -58,8 +59,38 @@ def load_documents():
             except Exception as error:
                 print(f"Failed to load {path}: {error}")
 
-    print(f"Loaded {len(documents)} document pages/files.")
+    # Load Markdown files
+    markdown_dir = DOCUMENTS_DIR / "markdown"
 
+    if markdown_dir.exists():
+        for path in markdown_dir.rglob("*.md"):
+            try:
+                text = path.read_text(
+                    encoding="utf-8",
+                    errors="ignore",
+                )
+
+                if not text.strip():
+                    continue
+
+                documents.append(
+                    Document(
+                        page_content=text,
+                        metadata={
+                            "type": "document",
+                            "format": "markdown",
+                            "source": str(
+                                path.relative_to(DOCUMENTS_DIR)
+                            ),
+                        },
+                    )
+                )
+
+            except Exception as error:
+                print(f"Failed to load {path}: {error}")
+
+    print(f"Loaded {len(documents)} document pages/files.")
+    
     # Split the extracted text into smaller chunks
     splitter = RecursiveCharacterTextSplitter(
         chunk_size=1000,
