@@ -13,6 +13,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 DATA_DIR = BASE_DIR / "data"
 WEBSITE_DIR = DATA_DIR / "website"
 COURSES_DIR = DATA_DIR / "courses"
+DOCUMENTS_DIR = DATA_DIR / "excess"
 
 CHROMA_DIR = BASE_DIR / "chroma_db"
 

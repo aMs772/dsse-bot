@@ -12,8 +12,15 @@ from .config import (
     WEBSITE_DIR,
 )
 
+# version 2
+from .documents import load_documents
+
+from langchain_text_splitters import (
+    RecursiveCharacterTextSplitter,
+)
 
 COLLECTION_NAME = "iitb_department"
+# version 2
 
 
 def create_embeddings():
@@ -167,7 +174,7 @@ def vector_store_exists():
         return False
 
 
-def ingest():
+# def ingest():
     if vector_store_exists():
         client = chromadb.PersistentClient(
             path=str(CHROMA_DIR)
@@ -218,6 +225,52 @@ def ingest():
         f"to Chroma."
     )
 
+# version 2
+
+def ingest():
+    print("Loading website documents...")
+    website_documents = load_website_documents()
+
+    print("Loading course documents...")
+    course_documents = load_course_documents()
+
+    print("Loading additional documents...")
+    additional_documents = load_documents()
+
+    # Split website Markdown into chunks
+    splitter = RecursiveCharacterTextSplitter(
+        chunk_size=1000,
+        chunk_overlap=150,
+    )
+
+    website_chunks = splitter.split_documents(
+        website_documents
+    )
+
+    documents = (
+        website_chunks
+        + course_documents
+        + additional_documents
+    )
+
+    print(f"Website chunks: {len(website_chunks)}")
+    print(f"Course documents: {len(course_documents)}")
+    print(f"Additional document chunks: {len(additional_documents)}")
+    print(f"Total chunks: {len(documents)}")
+
+    if not documents:
+        print("No documents found.")
+        return
+
+    # Create a fresh vector store.
+    # Delete the old chroma_db directory before running ingestion.
+    vector_store = create_vector_store()
+
+    vector_store.add_documents(documents)
+
+    print("Ingestion complete.")
+
+# version 2
 
 if __name__ == "__main__":
     ingest()
