@@ -1,0 +1,39 @@
+# Render blueprint for Numa.
+#
+# Either commit this file and use Render's "New > Blueprint", or ignore it and
+# type the buildCommand / startCommand into the dashboard by hand.
+#
+# The build step runs ingestion, because chroma_db/ is gitignored and Render's
+# free tier has no persistent disk. Each deploy therefore rebuilds the vector
+# store from data/ - a few tenths of a cent in embedding calls, and it can
+# never drift out of sync with the source files.
+
+services:
+  - type: web
+    name: numa
+    runtime: python
+    plan: free
+    region: singapore          # closest to Mumbai; also: oregon, frankfurt
+
+    buildCommand: >
+      pip install uv &&
+      uv sync --frozen &&
+      uv run python -m src.ingest
+
+    startCommand: >
+      uv run uvicorn server:app --host 0.0.0.0 --port $PORT
+
+    healthCheckPath: /api/health
+
+    envVars:
+      # Python 3.14 is very new; pin lower if the build fails on wheels.
+      - key: PYTHON_VERSION
+        value: "3.12"
+
+      # Set these in the Render dashboard, never in this file.
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: CHAT_MODEL
+        sync: false
+      - key: NUMA_PASSWORD
+        sync: false
