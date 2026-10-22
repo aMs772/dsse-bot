@@ -16,4 +16,6 @@ dependencies = [
     "pypdf>=6.21.1",
     "python-dotenv>=1.2.4",
     "streamlit>=1.65.0",
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.32.0",
 ]
