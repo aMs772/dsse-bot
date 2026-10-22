@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Numa &mdash; IITB Department Assistant</title>
+<meta name="description" content="Ask questions about courses, the department, administration, and related topics." />
+<link rel="icon" href="assets/favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <a class="inst" href="https://www.iitb.ac.in" target="_blank" rel="noopener" aria-label="IIT Bombay">
+      <!-- Two crests rather than a CSS filter: inverting the colour version
+           flattens the line-work into a blob. Swap both for the official
+           assets when you get them. -->
+      <img src="assets/iitb-logo.png" alt="IIT Bombay" class="inst-logo inst-light"
+           onerror="this.replaceWith(document.getElementById('instFallback').content.cloneNode(true))" />
+      <img src="assets/iitb-logo-dark.png" alt="" aria-hidden="true" class="inst-logo inst-dark" />
+    </a>
+    <!-- Appears only once a conversation has started (mockups 5 & 6). -->
+    <span class="brand-wordmark">
+      <img src="assets/numa-logo.png" alt="Numa" class="brand-wordmark-img"
+           onerror="this.replaceWith(document.getElementById('numaFallback').content.cloneNode(true))" />
+    </span>
+  </div>
+
+  <button id="themeToggle" class="icon-btn" type="button" aria-label="Switch theme">
+    <svg class="i-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+      <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+    </svg>
+    <svg class="i-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+      <circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.7"/>
+      <path d="M12 2.6v2.2M12 19.2v2.2M21.4 12h-2.2M4.8 12H2.6M18.6 5.4l-1.6 1.6M7 17l-1.6 1.6M18.6 18.6 17 17M7 7 5.4 5.4"
+            stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+    </svg>
+  </button>
+</header>
+
+<main id="app" class="app is-empty">
+
+  <div class="scroll" id="scroll">
+    <div class="column">
+
+      <section class="hero" id="hero">
+        <!-- Replace numa-logo.png with the Figma export. Text fallback below. -->
+        <div class="wordmark">
+          <img src="assets/numa-logo.png" alt="Numa" class="wordmark-img"
+               onerror="this.replaceWith(document.getElementById('numaFallback').content.cloneNode(true))" />
+        </div>
+        <h1>IITB Department Assistant</h1>
+        <p class="sub">Ask questions about courses, the department, administration, and related topics.</p>
+      </section>
+
+      <section class="thread" id="thread" aria-live="polite"></section>
+
+      <!-- In the empty state the composer sits here, directly under the hero. -->
+      <div class="composer-slot" id="composerSlot">
+        <form class="composer" id="composer" autocomplete="off">
+          <!-- data-gramm*: stop Grammarly injecting its badge over the send button. -->
+          <textarea id="input" rows="1" placeholder="Ask Numa&hellip;"
+                    aria-label="Ask a question" spellcheck="false"
+                    data-gramm="false" data-gramm_editor="false"
+                    data-enable-grammarly="false"></textarea>
+          <button class="send" id="send" type="submit" aria-label="Send">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+              <path d="M12 19V5M12 5l-6.2 6.2M12 5l6.2 6.2" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- In the conversation state the composer is moved into this docked bar. -->
+  <div class="dock" id="dock" aria-hidden="true"></div>
+
+</main>
+
+<!-- ------------------------------------------------------------------ -->
+<!-- Fallback marks, used only when the real logo files are missing.     -->
+<!-- ------------------------------------------------------------------ -->
+<template id="numaFallback">
+  <span class="wordmark-fallback">
+    <svg viewBox="0 0 54 46" width="46" height="39" aria-hidden="true">
+      <path d="M11 34a12 12 0 1 1 21-10" fill="none" stroke="var(--brand)" stroke-width="7.5" stroke-linecap="round"/>
+      <path d="M35 14a12 12 0 1 1-21 10" fill="none" stroke="var(--brand)" stroke-width="7.5" stroke-linecap="round"/>
+      <path d="M43 3.5l1.8 4.7 4.7 1.8-4.7 1.8L43 16.5l-1.8-4.7L36.5 10l4.7-1.8z" fill="var(--brand-accent)"/>
+    </svg>
+    <span class="wordmark-text">Numa</span>
+  </span>
+</template>
+
+<template id="instFallback">
+  <span class="inst-fallback" aria-hidden="true">IITB</span>
+</template>
+
+<script src="app.js"></script>
+</body>
+</html>

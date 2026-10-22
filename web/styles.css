@@ -1,0 +1,366 @@
+/* =====================================================================
+   Numa — IITB Department Assistant
+   Brand: #004F9F (blue)  ·  #009F9F (teal)  ·  #F07C22 (accent spark)
+   ===================================================================== */
+
+:root {
+  --brand:        #1E6FD9;
+  --brand-deep:   #004F9F;
+  --brand-teal:   #009F9F;
+  --brand-accent: #F07C22;
+
+  --radius-card:  10px;
+  --radius-input: 14px;
+  --col:          578px;   /* widened on large screens, see @media below */
+
+  --font: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+/* ---------- dark (default) ---------- */
+:root[data-theme="dark"] {
+  --bg:            #0D1117;
+  --bg-elevated:   #161C24;
+  --text:          #EDF1F6;
+  --text-muted:    #9AA7B5;
+  --text-faint:    #6B7988;
+  --line:          #1E2733;
+  --line-strong:   #2A3644;
+  --input-bg:      #141A22;
+  --send-fg:       #FFFFFF;
+  --shadow:        0 8px 28px rgba(0, 0, 0, .45);
+}
+
+/* ---------- light ---------- */
+:root[data-theme="light"] {
+  --bg:            #FFFFFF;
+  --bg-elevated:   #F5F7FA;
+  --text:          #1B2733;
+  --text-muted:    #536271;
+  --text-faint:    #8D9AA8;
+  --line:          #E3E9EF;
+  --line-strong:   #D3DCE5;
+  --input-bg:      #F7F9FB;
+  --send-fg:       #FFFFFF;
+  --shadow:        0 8px 28px rgba(16, 36, 60, .10);
+}
+
+* { box-sizing: border-box; }
+
+html, body { height: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 14.5px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* ===================== top bar ===================== */
+
+.topbar {
+  position: fixed;
+  inset: 0 0 auto 0;
+  height: 86px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 22px;
+  pointer-events: none;
+  z-index: 20;
+  transition: background .2s, border-color .2s;
+  border-bottom: 1px solid transparent;
+}
+.topbar > * { pointer-events: auto; }
+
+/* Once the conversation starts the bar gets a surface so text can scroll
+   under it without colliding with the logos. */
+body.chatting .topbar {
+  height: 72px;
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom-color: var(--line);
+}
+
+.brand { display: flex; align-items: center; gap: 14px; }
+
+.brand-wordmark { display: none; }
+body.chatting .brand-wordmark { display: inline-flex; align-items: center; }
+
+.brand-wordmark-img { height: 30px; width: auto; display: block; }
+
+/* the drawn fallback, scaled down to sit in the bar */
+.brand-wordmark .wordmark-fallback { gap: 7px; }
+.brand-wordmark .wordmark-fallback svg { width: 27px; height: 23px; }
+.brand-wordmark .wordmark-text { font-size: 25px; }
+
+.inst { display: inline-flex; align-items: center; text-decoration: none; }
+
+.inst-logo { width: 52px; height: 52px; object-fit: contain; display: block; }
+
+/* One crest per theme — no invert filter, which would fill the line-work in. */
+:root[data-theme="dark"]  .inst-light { display: none; }
+:root[data-theme="light"] .inst-dark  { display: none; }
+:root[data-theme="dark"]  .inst-dark  { opacity: .92; }
+
+.inst-fallback {
+  display: inline-grid;
+  place-items: center;
+  width: 46px; height: 46px;
+  border: 1.5px solid var(--line-strong);
+  border-radius: 50%;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .06em;
+  color: var(--text-muted);
+}
+
+.icon-btn {
+  display: grid;
+  place-items: center;
+  width: 34px; height: 34px;
+  border: 1px solid transparent;
+  border-radius: 9px;
+  background: transparent;
+  color: var(--text-faint);
+  cursor: pointer;
+  transition: color .15s, background .15s, border-color .15s;
+}
+.icon-btn:hover { color: var(--text); background: var(--bg-elevated); border-color: var(--line); }
+
+:root[data-theme="dark"]  .i-sun  { display: none; }
+:root[data-theme="light"] .i-moon { display: none; }
+
+/* ===================== layout ===================== */
+
+.app { height: 100%; display: flex; flex-direction: column; }
+
+.scroll {
+  flex: 1;
+  overflow-y: auto;
+  scrollbar-gutter: stable;
+  scrollbar-width: thin;
+  scrollbar-color: var(--line-strong) transparent;
+}
+.scroll::-webkit-scrollbar { width: 10px; }
+.scroll::-webkit-scrollbar-track { background: transparent; }
+.scroll::-webkit-scrollbar-thumb {
+  background: var(--line-strong);
+  border: 3px solid var(--bg);
+  border-radius: 10px;
+}
+.scroll::-webkit-scrollbar-thumb:hover { background: var(--text-faint); }
+
+.column {
+  width: min(var(--col), calc(100% - 40px));
+  margin: 0 auto;
+  padding: 118px 0 36px;
+}
+
+/* Empty state: hero + composer sit together, optically centred.
+   The extra bottom padding lifts the group above true centre — a block sitting
+   at an exact 50% reads as low to the eye. */
+.app.is-empty .column {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: clamp(100px, 17vh, 230px);
+}
+
+/* ===================== hero ===================== */
+
+.hero { margin-bottom: 26px; }
+
+.wordmark { margin-bottom: 6px; }
+.wordmark-img { height: 54px; width: auto; display: block; }
+
+.wordmark-fallback { display: inline-flex; align-items: center; gap: 10px; }
+.wordmark-text {
+  font-size: 46px;
+  font-weight: 700;
+  letter-spacing: -.02em;
+  color: var(--brand);
+  line-height: 1;
+}
+
+.hero h1 {
+  margin: 4px 0 10px;
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -.02em;
+  line-height: 1.12;
+}
+
+.hero .sub {
+  margin: 0;
+  font-size: 13.6px;
+  letter-spacing: -.005em;
+  color: var(--text-muted);
+}
+
+/* Once a conversation starts the branding lives in the top bar instead
+   (mockups 5 & 6), so the hero is retired. */
+.app:not(.is-empty) .hero { display: none; }
+.app:not(.is-empty) .column { padding-top: 96px; }
+
+/* ===================== messages ===================== */
+
+.thread { display: flex; flex-direction: column; gap: 22px; }
+.thread:empty { display: none; }
+
+.msg { display: flex; gap: 18px; align-items: flex-start; }
+
+.avatar {
+  flex: 0 0 auto;
+  width: 30px; height: 30px;
+  border-radius: 8px;
+  margin-top: 1px;
+}
+.msg.user .avatar      { background: var(--brand-teal); }
+.msg.assistant .avatar { background: var(--brand-deep); }
+
+.bubble { min-width: 0; flex: 1; }
+
+.msg.user {
+  background: var(--bg-elevated);
+  border-radius: var(--radius-card);
+  padding: 16px 18px;
+}
+:root[data-theme="light"] .msg.user { border: 1px solid var(--line); }
+
+.msg.assistant { padding: 2px 0; }
+
+.bubble p { margin: 0 0 11px; }
+.bubble p:last-child { margin-bottom: 0; }
+.bubble ul, .bubble ol { margin: 0 0 11px; padding-left: 20px; }
+.bubble li { margin-bottom: 5px; }
+.bubble strong { font-weight: 600; }
+.bubble code {
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: .88em;
+  background: var(--bg-elevated);
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  padding: 1px 5px;
+}
+
+/* typing indicator */
+.dots { display: inline-flex; gap: 5px; padding: 7px 0; }
+.dots i {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--text-faint);
+  animation: blink 1.3s infinite ease-in-out;
+}
+.dots i:nth-child(2) { animation-delay: .18s; }
+.dots i:nth-child(3) { animation-delay: .36s; }
+@keyframes blink { 0%, 60%, 100% { opacity: .25; } 30% { opacity: 1; } }
+
+.error {
+  color: #E5484D;
+  border: 1px solid #E5484D40;
+  background: #E5484D12;
+  border-radius: 8px;
+  padding: 11px 13px;
+  font-size: 13.5px;
+}
+
+/* ===================== composer ===================== */
+
+.composer-slot { margin-top: 16px; }
+
+.dock {
+  position: sticky;
+  bottom: 0;
+  padding: 10px 0 26px;
+  background: linear-gradient(to top, var(--bg) 62%, transparent);
+}
+.dock:empty { display: none; }
+.dock .composer {
+  width: min(var(--col), calc(100% - 40px));
+  margin: 0 auto;
+}
+
+.composer {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  background: var(--input-bg);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-input);
+  padding: 10px 10px 10px 18px;
+  transition: border-color .15s, box-shadow .15s;
+}
+.composer:focus-within {
+  border-color: var(--brand);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--brand) 16%, transparent);
+}
+
+/* The empty state uses the rounded pill from the mockup. */
+.app.is-empty .composer {
+  border-radius: 999px;
+  padding: 12px 12px 12px 24px;
+  box-shadow: var(--shadow);
+}
+
+.composer textarea {
+  flex: 1;
+  border: 0;
+  outline: 0;
+  resize: none;
+  background: transparent;
+  color: var(--text);
+  font-family: inherit;
+  font-size: 14.5px;
+  line-height: 1.55;
+  padding: 7px 0;
+  max-height: 180px;
+  overflow-y: auto;
+}
+.composer textarea::placeholder { color: var(--text-faint); }
+
+.send {
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  width: 36px; height: 36px;
+  border: 0;
+  border-radius: 9px;
+  background: var(--brand);
+  color: var(--send-fg);
+  cursor: pointer;
+  transition: background .15s, opacity .15s, transform .12s;
+}
+.app.is-empty .send { border-radius: 50%; }
+.send:hover:not(:disabled) { background: var(--brand-deep); }
+.send:active:not(:disabled) { transform: scale(.94); }
+.send:disabled { opacity: .55; cursor: default; }
+
+/* ===================== responsive ===================== */
+
+/* Roomier column on large monitors — 578px is drawn for a 1280px laptop and
+   reads as a thin ribbon on a 1080p+ display. */
+@media (min-width: 1500px) {
+  :root { --col: 700px; }
+  body { font-size: 15px; }
+}
+
+@media (max-width: 640px) {
+  .topbar { height: 68px; padding: 0 16px; }
+  .inst-logo { width: 40px; height: 40px; }
+  .column { width: calc(100% - 32px); padding-top: 92px; }
+  .hero h1 { font-size: 26px; }
+  .wordmark-img { height: 42px; }
+  .wordmark-text { font-size: 36px; }
+  .msg { gap: 13px; }
+  .dock .composer { width: calc(100% - 32px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}
