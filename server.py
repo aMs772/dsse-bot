@@ -33,7 +33,7 @@ WEB_DIR = BASE_DIR / "web"
 NUMA_USER = os.getenv("NUMA_USER", "dsse")
 NUMA_PASSWORD = os.getenv("NUMA_PASSWORD")
 
-app = FastAPI(title="Numa", description="IITB Department Assistant")
+app = FastAPI(title="Numa", description="IITB Innovation Chatbot")
 
 
 # ----------------------------------------------------------------- auth
